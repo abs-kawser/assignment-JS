@@ -20,13 +20,13 @@ console.log(res2);
 function brickCalculator(floor) {
     var brick;
     if(floor<=10)
-     brick = 1000*15*floor; // For 1 floor 1000 brick needed, 1-10 floors are 15feet
-    else if(floor>=11&&floor<=20)
-     brick = 1000*12*floor; // For 1 floor 1000 brick needed, 11-20 floors are 12feet
-    else
-     brick = 1000*10*floor; // For 1 floor 1000 brick needed, more than 20 floors are 10feet
-
-    return brick //returns total brick needed;
+     brick = 1000*15*floor; // For 1 feet 1000 brick needed, 1-10 floors are 15feet
+    else if(floor>=11&&floor<=20) 
+     brick = 1000*12*floor; // For 1 feet 1000 brick needed, 11-20 floors are 12feet
+    else 
+     brick = 1000*10*floor; // For 1 feet 1000 brick needed, more than 20 floors are 10feet
+          
+    return brick //returns total brick needed; 
 }
 var res3 = brickCalculator(6);
 console.log(res3);
